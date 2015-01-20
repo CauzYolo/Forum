@@ -64,7 +64,7 @@
 			include_once('pages/supprCategorie.inc.php');
 		break;
 		case 21:
-			include_once('pages/exportXml.inc.php');
+			include_once('pages/exportXML.inc.php');
 		break;
 		case 22:
 			include_once('pages/importXML.inc.php');
