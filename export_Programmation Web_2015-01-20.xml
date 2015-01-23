@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+               <!DOCTYPE export [
+                  <!-- Declaration de la DTD interne car FireFox ne prends pas en compte les DTDs externes -->
+                  <!ELEMENT export (categorie*)>
+                     <!ELEMENT categorie (idCat, nom, sujet*)>
+                        <!ELEMENT idCat (#PCDATA)>
+                        <!ELEMENT nom (#PCDATA)>
+                        <!ELEMENT sujet (idSujet, titre, auteur, dateSujet, nbVues, estFerme, description, reponse*)>
+                              <!ELEMENT idSujet (#PCDATA)>
+                              <!ELEMENT titre (#PCDATA)>
+                              <!ELEMENT auteur (#PCDATA)>
+                              <!ELEMENT dateSujet (#PCDATA)>
+                              <!ELEMENT description (#PCDATA)>
+                              <!ELEMENT nbVues (#PCDATA)>
+                              <!ELEMENT estFerme (#PCDATA)>
+                              <!ELEMENT reponse (idRep, utilisateur, dateReponse, message)>
+                                 <!ELEMENT idRep (#PCDATA)>
+                                 <!ELEMENT utilisateur (#PCDATA)>
+                                 <!ELEMENT dateReponse (#PCDATA)>
+                                 <!ELEMENT message (#PCDATA)>
+
+                  <!-- Formatage des caractères spéciaux HTML en XML -->
+
+                  <!ENTITY Ccedil "&#199;">
+                  <!ENTITY ccedil "&#231;">
+                  <!ENTITY Aacute "&#193;">
+                  <!ENTITY aacute "&#225;">
+                  <!ENTITY agrave "&#224;">
+                  <!ENTITY Agrave "&#192;">
+                  <!ENTITY eacute "&#233;">
+                  <!ENTITY Eacute "&#201;">
+                  <!ENTITY ecirc "&#234;">
+                  <!ENTITY Ecirc "&#202;">
+                  <!ENTITY nbsp  " ">
+
+               ]><export><categorie><idCat>1</idCat><nom>Programmation Web</nom><sujet><idSujet>1</idSujet><titre>Faire le php!</titre><auteur>CauzYolo</auteur><dateSujet>2015-01-10</dateSujet><nbVues>63</nbVues><estFerme>1</estFerme><description>[p]Nous allons commencer par les bases de[strong] [/strong]PHP. Pour effectuer ce cours, nous aurons besoin de Wamp ou Lamp ou Mamp...[/p]</description><reponse><idRep>28</idRep><utilisateur>Master</utilisateur><dateReponse>2015-01-16</dateReponse><message>[p]Si tu veux mon avis je pense que ça va être compliqué :)[/p]</message></reponse><reponse><idRep>30</idRep><utilisateur>CauzYolo</utilisateur><dateReponse>2015-01-16</dateReponse><message>[p][em]Je ne pense [strong]pas[/strong] :p[/em][/p]</message></reponse><reponse><idRep>31</idRep><utilisateur>toto</utilisateur><dateReponse>2015-01-16</dateReponse><message>[p]Et ben moi si ![/p]</message></reponse></sujet><sujet><idSujet>2</idSujet><titre>Apprendre le php</titre><auteur>administrateur</auteur><dateSujet>2015-01-01</dateSujet><nbVues>28</nbVues><estFerme>0</estFerme><description>Nous allons commencer par les bases de PHP. Pour effectuer ce cours, nous aurons besoin de Wamp ou Lamp ou Mamp...</description><reponse><idRep>1</idRep><utilisateur>administrateur</utilisateur><dateReponse>2015-01-16</dateReponse><message>[p]Il nous manque la suite[/p]</message></reponse></sujet><sujet><idSujet>3</idSujet><titre>Apprendre l'HTML</titre><auteur>administrateur</auteur><dateSujet>2015-01-14</dateSujet><nbVues>5</nbVues><estFerme>0</estFerme><description>Nous allons commencer par les bases de HTML. Pour effectuer ce cours, nous aurons besoin de Wamp ou Lamp ou Mamp...</description></sujet></categorie></export>
